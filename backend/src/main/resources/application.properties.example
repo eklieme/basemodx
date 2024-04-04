@@ -1,0 +1,36 @@
+#general
+server.port=8081
+spring.data.rest.default-page-size=50000
+
+#logging
+logging.level.io.basemod=TRACE
+logging.level.org.apache.coyote=DEBUG
+logging.level.org.mongodb=INFO
+logging.level.org.springframework.web=DEBUG
+logging.level.org.springframework.security=DEBUG
+
+#api
+spring.data.rest.base-path=/api
+spring.jackson.serialization.fail-on-empty-beans=false
+
+#health
+management.health.mongo.enabled=true
+management.endpoint.health.show-details=always
+management.endpoints.web.cors.allowed-origins=*
+management.endpoints.web.cors.allowed-methods=OPTIONS, GET, POST
+management.endpoints.web.cors.allowed-headers=*
+
+# config for mongo db is now solved via env variable SPRING_DATA_MONGODB_URI
+spring.data.mongodb.database=${BASEMODX_DATABASE_NAME}
+
+
+# custom fields
+deployment.environment=local
+
+# set to prod or something != demo to disallow privilege change of users
+deployment.mode=demo
+
+#jwt security
+basemodx.security.jwtSecret=<jwt passphrase>
+basemodx.security.jwtExpirationMs=<jwt expiration date>
+
