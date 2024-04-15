@@ -4,7 +4,10 @@ This repository contains the source-code for *baseModX*, a web application imple
 *biometric authentication systems and their evaluations* in a central repository. 
 
 
-![Characteristics Selection](/screenshots/characteristics_selection.png "4-step process to conserve all details of a proposed system and its evaluations.")
+
+![Characteristics Selection](https://github.com/eklieme/basemodx/blob/main/screenshots/characteristics_selection.PNG)
+
+![Evaluation Details](https://github.com/eklieme/basemodx/blob/main/screenshots/evaluation_details.PNG)
 
 
 If you wonder why you would do that, please have a look at the following research paper. Please do not forget to leave
